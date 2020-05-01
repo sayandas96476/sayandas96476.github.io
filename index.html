@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>photographs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+      <i class="fa fa-remove"></i>
+    </a>
+    
+    <div class="w3-bar-block w3-center">
+      <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+      <a href="drawing.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Drawing</a>
+      <a href="mailto:Sayandaslaptop@gmail.com" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    </div>
+  </nav>
+  
+
+
+
+
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+  <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+
+    <div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>PHOTOWORLD</b></h1>
+  <p><b>A page for budding photographers.</b></p>
+  <p><b>Clicked by:SAYAN DAS</b></p>
+  <p><b>#MAR</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Changeview</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="1.JPG" style="width:95%" >
+    <img src="2.JPG" style="width:95%">
+    <img src="3.JPG" style="width:95%">
+    <img src="4.JPG" style="width:95%">
+    <img src="5.JPG" style="width:95%">
+    <img src="6.JPG" style="width:95%">
+  </div>
+
+  <div class="w3-third" >
+    <img src="7.JPG" style="width:95%">
+    <img src="8.JPG" style="width:95%">
+    <img src="9.JPG" style="width:95%">
+    <img src="10.JPG" style="width:95%">
+    <img src="11.JPG" style="width:95%">
+    <img src="12.JPG" style="width:95%">
+  </div>
+
+  <div class="w3-third">  
+    <img src="13.JPG" style="width:95%">
+    
+    <img src="15.JPG" style="width:95%">
+    <img src="16.JPG" style="width:95%">
+    <img src="17.JPG" style="width:95%">
+    <img src="X.JPG" style="width:95%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
